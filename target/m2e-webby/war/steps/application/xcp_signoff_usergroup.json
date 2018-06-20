@@ -25,6 +25,12 @@
       "autoLoad" : true
     } ]
   }, {
+    "xtype" : "xcp_uievent_publisher",
+    "plugins" : [ {
+      "ptype" : "xcp_publish_uievents",
+      "publish" : [ ]
+    } ]
+  }, {
     "xcpId" : "signoff_password",
     "xtype" : "xcp_text_input",
     "fieldLabel" : "${_UI_UIStep_xcp_signoff_usergroup_signoff_password_fieldLabel}",

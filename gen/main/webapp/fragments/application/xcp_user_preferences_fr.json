@@ -53,43 +53,43 @@
         "inputMappings" : [ {
           "propertyId" : "role",
           "setterFunName" : "setPublishEventParameter",
-          "etype" : "nnpc_user_preferences_fr_role_1",
+          "etype" : "xcp_user_preferences_fr_role_1",
           "events" : [ "role.change" ],
           "disableInitialEval" : false
         }, {
           "propertyId" : "workflowautonexttask",
           "setterFunName" : "setPublishEventParameter",
-          "etype" : "nnpc_user_preferences_fr_workflowautonexttask_1",
+          "etype" : "xcp_user_preferences_fr_workflowautonexttask_1",
           "events" : [ "workflowautonexttask.change" ],
           "disableInitialEval" : false
         }, {
           "propertyId" : "delegate_task",
           "setterFunName" : "setPublishEventParameter",
-          "etype" : "nnpc_user_preferences_fr_delegate_task_1",
+          "etype" : "xcp_user_preferences_fr_delegate_task_1",
           "events" : [ "delegate_task.change" ],
           "disableInitialEval" : false
         }, {
           "propertyId" : "delegatetouser",
           "setterFunName" : "setPublishEventParameter",
-          "etype" : "nnpc_user_preferences_fr_delegatetouser_1",
+          "etype" : "xcp_user_preferences_fr_delegatetouser_1",
           "events" : [ "delegatetouser.change" ],
           "disableInitialEval" : false
         }, {
           "propertyId" : "networklocation",
           "setterFunName" : "setPublishEventParameter",
-          "etype" : "nnpc_user_preferences_fr_networklocation_1",
+          "etype" : "xcp_user_preferences_fr_networklocation_1",
           "events" : [ "networklocation.change" ],
           "disableInitialEval" : false
         }, {
           "propertyId" : "locale",
           "setterFunName" : "setPublishEventParameter",
-          "etype" : "nnpc_user_preferences_fr_locale_1",
+          "etype" : "xcp_user_preferences_fr_locale_1",
           "events" : [ "locale.change" ],
           "disableInitialEval" : false
         }, {
           "propertyId" : "enable_client_plugin",
           "setterFunName" : "setPublishEventParameter",
-          "etype" : "nnpc_user_preferences_fr_enable_client_plugin_1",
+          "etype" : "xcp_user_preferences_fr_enable_client_plugin_1",
           "events" : [ "enable_client_plugin.change" ],
           "disableInitialEval" : false
         } ]
@@ -99,7 +99,7 @@
         "inputMappings" : [ {
           "propertyId" : "page_id",
           "setterFunName" : "setPublishEventParameter",
-          "etype" : "nnpc_user_preferences_fr_page_id_1"
+          "etype" : "xcp_user_preferences_fr_page_id_1"
         } ]
       } ]
     } ]

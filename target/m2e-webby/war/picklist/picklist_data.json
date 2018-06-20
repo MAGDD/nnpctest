@@ -25,42 +25,30 @@
 "label": "${_UI_PickList_xcp_alert_status_CLOSED}"
 }]
 },
-"xcp_wq_view_filter":{
+"xcp_alert_severity":{
 "model": "xcp.picklist.models.StringModel",
 "data": [{
-"value": "SHOW_ALL_TASKS",
-"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_ALL_TASKS}"
+"value": "LOW",
+"label": "${_UI_PickList_xcp_alert_severity_LOW}"
 },
 {
-"value": "SHOW_PROCESSOR_ELIGIBLE_AND_OWNED_TASKS",
-"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_PROCESSOR_ELIGIBLE_AND_OWNED_TASKS}"
+"value": "MEDIUM",
+"label": "${_UI_PickList_xcp_alert_severity_MEDIUM}"
 },
 {
-"value": "SHOW_UNASSIGNED_TASKS",
-"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_UNASSIGNED_TASKS}"
-},
-{
-"value": "SHOW_PROCESSOR_ELIGIBLE_TASKS",
-"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_PROCESSOR_ELIGIBLE_TASKS}"
+"value": "HIGH",
+"label": "${_UI_PickList_xcp_alert_severity_HIGH}"
 }]
 },
-"xcp_versionList":{
+"xcp_taskwqflagpicklist":{
 "model": "xcp.picklist.models.IntegerModel",
 "data": [{
-"value": 0,
-"label": "${_UI_PickList_xcp_versionList_0}"
-},
-{
 "value": 1,
-"label": "${_UI_PickList_xcp_versionList_1}"
+"label": "${_UI_PickList_xcp_taskwqflagpicklist_1}"
 },
 {
-"value": 2,
-"label": "${_UI_PickList_xcp_versionList_2}"
-},
-{
-"value": 3,
-"label": "${_UI_PickList_xcp_versionList_3}"
+"value": 0,
+"label": "${_UI_PickList_xcp_taskwqflagpicklist_0}"
 }]
 },
 "xcp_taskstatuspiclkist":{
@@ -101,35 +89,28 @@
 "label": "${_UI_PickList_xcp_versionList_3}"
 }]
 },
-"xcp_alert_severity":{
-"model": "xcp.picklist.models.StringModel",
-"data": [{
-"value": "LOW",
-"label": "${_UI_PickList_xcp_alert_severity_LOW}"
-},
-{
-"value": "MEDIUM",
-"label": "${_UI_PickList_xcp_alert_severity_MEDIUM}"
-},
-{
-"value": "HIGH",
-"label": "${_UI_PickList_xcp_alert_severity_HIGH}"
-}]
-},
-"xcp_taskwqflagpicklist":{
-"model": "xcp.picklist.models.IntegerModel",
-"data": [{
-"value": 1,
-"label": "${_UI_PickList_xcp_taskwqflagpicklist_1}"
-},
-{
-"value": 0,
-"label": "${_UI_PickList_xcp_taskwqflagpicklist_0}"
-}]
-},
 "xcp_LocaleStore":{
 "model": "xcp.picklist.models.StringModel",
 "data": []
+},
+"xcp_wq_view_filter":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "SHOW_ALL_TASKS",
+"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_ALL_TASKS}"
+},
+{
+"value": "SHOW_PROCESSOR_ELIGIBLE_AND_OWNED_TASKS",
+"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_PROCESSOR_ELIGIBLE_AND_OWNED_TASKS}"
+},
+{
+"value": "SHOW_UNASSIGNED_TASKS",
+"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_UNASSIGNED_TASKS}"
+},
+{
+"value": "SHOW_PROCESSOR_ELIGIBLE_TASKS",
+"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_PROCESSOR_ELIGIBLE_TASKS}"
+}]
 },
 "xcp_task_state":{
 "model": "xcp.picklist.models.IntegerModel",
@@ -164,6 +145,25 @@
 {
 "value": 7,
 "label": "${_UI_PickList_xcp_task_state_7}"
+}]
+},
+"xcp_versionList":{
+"model": "xcp.picklist.models.IntegerModel",
+"data": [{
+"value": 0,
+"label": "${_UI_PickList_xcp_versionList_0}"
+},
+{
+"value": 1,
+"label": "${_UI_PickList_xcp_versionList_1}"
+},
+{
+"value": 2,
+"label": "${_UI_PickList_xcp_versionList_2}"
+},
+{
+"value": 3,
+"label": "${_UI_PickList_xcp_versionList_3}"
 }]
 }
 }

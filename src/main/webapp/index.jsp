@@ -14,6 +14,7 @@
     private static final String LOGGING_MODE = "logging";
     private static final String NOMINIFY="nominify";
     private static final String WEBBY_MODE="webby";
+    private static final String AUTOMATION = "automation";
 
     //ExtJs seems to have some language pack specific to country, below is the list of it.
     private static final TreeMap<String, String> extCountryLangPacks = new TreeMap<String, String>();
@@ -216,6 +217,12 @@
         loggingMode = "false";
     }
 
+    String automationMode = request.getParameter(AUTOMATION);
+    if(automationMode == null || automationMode.length() == 0)
+    {
+        automationMode = "false";
+    }
+
     Locale clientLocale = request.getLocale();
     String lang = clientLocale.getLanguage();
     String country = clientLocale.getCountry();
@@ -375,7 +382,8 @@
                 componentLoadMode : '<%=componentLoadMode.replaceAll("[^a-zA-Z0-9._-]", "")%>',
                 nominify: <%=nominify%>,
                 rtl: <%=rtl%>,
-                webbyMode: <%=webbyMode%>
+                webbyMode: <%=webbyMode%>,
+                automation: <%=automationMode%>
             });
             if(console && console.firebuglite)
             {

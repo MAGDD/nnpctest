@@ -5,6 +5,15 @@
   "pageTitle" : "${_UI_Page_xcp_landing_page_title}",
   "xtype" : "xcp_form",
   "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ ]
+  }, {
+    "xtype" : "xcp_uievent_publisher",
+    "plugins" : [ {
+      "ptype" : "xcp_publish_uievents",
+      "publish" : [ ]
+    } ]
+  }, {
     "xcpId" : "column_box",
     "xtype" : "xcp_column_box",
     "collapsible" : false,

@@ -5,6 +5,15 @@
   "xtype" : "xcp_form",
   "models" : [ "xcp_dm_document" ],
   "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ ]
+  }, {
+    "xtype" : "xcp_uievent_publisher",
+    "plugins" : [ {
+      "ptype" : "xcp_publish_uievents",
+      "publish" : [ ]
+    } ]
+  }, {
     "xtype" : "xcp_fragment_input",
     "plugins" : [ {
       "ptype" : "xcp_expression_properties",
@@ -17,13 +26,13 @@
       "expression" : [ {
         "propertyId" : "model",
         "setterFunName" : "setOutputValue",
-        "etype" : "nnpc_dm_document_chk_model_1",
+        "etype" : "xcp_dm_document_chk_model_1",
         "events" : [ "xcp_dm_document.change", "xcp_dm_document.load" ],
         "disableInitialEval" : false
       }, {
         "propertyId" : "model.object_name",
         "setterFunName" : "setModelAttributeValue",
-        "etype" : "nnpc_dm_document_chk_model_object_name_1",
+        "etype" : "xcp_dm_document_chk_model_object_name_1",
         "events" : [ "object_name.change" ],
         "disableInitialEval" : false
       } ]

@@ -11,6 +11,7 @@
 <%!
 
         private static final String NOMINIFY="nominify";
+        private static final String AUTOMATION="automation";
 
         //ExtJs seems to have some language pack specific to country, below is the list of it.
         private static final Set extCountryLangPacks = new TreeSet();
@@ -33,6 +34,11 @@
     boolean nominify = false;
     if (request.getParameterMap().containsKey(NOMINIFY)) {
         nominify = true;
+    }
+
+    boolean automation = false;
+    if (request.getParameterMap().containsKey(AUTOMATION)) {
+        automation = true;
     }
 
     Locale clientLocale = request.getLocale();
@@ -91,7 +97,11 @@
         <script type="text/javascript">
             xcp.extLangFileSuffix = "<%=extLangFileSuffix%>";
         </script>
+        <% if(automation) { %>
+        <script type="text/javascript" src="component/xcp-core/xcp_signin/contents-${applicationVersion}.js?locale=<%=lang%>&automation=true&nominify=true"></script>
+        <% } else { %>
         <script type="text/javascript" src="component/xcp-core/xcp_signin/contents-${applicationVersion}.js?locale=<%=lang%>"></script>
+        <% }  %>
         <script type="text/javascript" src="component/xcp-core/xcp_theme_lib/contents-${applicationVersion}.js?locale=<%=lang%>"></script>
 
         <%-- temporary change for window title --%>

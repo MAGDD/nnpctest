@@ -5,6 +5,15 @@
   "xtype" : "xcp_form",
   "models" : [ "xcp_dm_document_template" ],
   "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ ]
+  }, {
+    "xtype" : "xcp_uievent_publisher",
+    "plugins" : [ {
+      "ptype" : "xcp_publish_uievents",
+      "publish" : [ ]
+    } ]
+  }, {
     "xtype" : "xcp_fragment_input",
     "plugins" : [ {
       "ptype" : "xcp_expression_properties",
@@ -17,19 +26,19 @@
       "expression" : [ {
         "propertyId" : "model",
         "setterFunName" : "setOutputValue",
-        "etype" : "nnpc_dm_document_imp_model_1",
+        "etype" : "xcp_dm_document_imp_model_1",
         "events" : [ "xcp_dm_document_template.change", "xcp_dm_document_template.load" ],
         "disableInitialEval" : false
       }, {
         "propertyId" : "model.object_name",
         "setterFunName" : "setModelAttributeValue",
-        "etype" : "nnpc_dm_document_imp_model_object_name_1",
+        "etype" : "xcp_dm_document_imp_model_object_name_1",
         "events" : [ "object_name.change" ],
         "disableInitialEval" : false
       }, {
         "propertyId" : "model.a_content_type",
         "setterFunName" : "setModelAttributeValue",
-        "etype" : "nnpc_dm_document_imp_model_a_content_type_1",
+        "etype" : "xcp_dm_document_imp_model_a_content_type_1",
         "events" : [ "application.fragmentInputModifiedEvent.content_format" ],
         "disableInitialEval" : false
       } ]

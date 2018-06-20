@@ -5,6 +5,15 @@
   "pageTitle" : "${_UI_Page_nnpc_role_member_title}",
   "xtype" : "xcp_form",
   "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ ]
+  }, {
+    "xtype" : "xcp_uievent_publisher",
+    "plugins" : [ {
+      "ptype" : "xcp_publish_uievents",
+      "publish" : [ ]
+    } ]
+  }, {
     "xcpId" : "breadcrumb",
     "xtype" : "xcp_breadcrumb",
     "text" : "${_UI_Page_nnpc_role_member_breadcrumb_text}",

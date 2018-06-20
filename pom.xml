@@ -9,17 +9,21 @@
   <description/>
   <url>http://www.emc.com/xcp</url>
   <properties>
-  	<creationDate>2018-06-20T11:23:01.631+0200</creationDate>  	
+    <creationDate>2018-06-20T11:23:01.631+0200</creationDate>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
 	  
   <build>
-    <finalName>nnpc-nnpctest-${version}</finalName>
+    <finalName>nnpc-nnpctest-${project.version}</finalName>
     <plugins>
       <plugin>
          <groupId>com.emc.xcp.builder</groupId>
          <artifactId>xcp-import-project</artifactId>
          <version>1.0.4</version>
+      <configuration>
+          <mavenRepoPath>maven</mavenRepoPath>
+        </configuration>
       </plugin>
       <plugin>
          <groupId>com.emc.xcp.builder</groupId>
@@ -34,8 +38,9 @@
             </execution>
          </executions>
          <configuration>
-         	<dir>${basedir}\Artifacts</dir>
-         </configuration>
+          <dir>${basedir}/Artifacts</dir>
+          <mavenRepoPath>maven</mavenRepoPath>
+        </configuration>
       </plugin>
       <plugin>
 		 <groupId>org.codehaus.mojo</groupId>
@@ -84,27 +89,15 @@
             </execution>
          </executions>
          <configuration>
-         	<dir>${basedir}\Artifacts</dir>
-         </configuration>
+          <dir>${basedir}/Artifacts</dir>
+          <mavenRepoPath>maven</mavenRepoPath>
+        </configuration>
       </plugin>
-	  <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-antrun-plugin</artifactId>
-		<executions>
-			<execution>
-				<id>copy-resources-for-m2e-webby</id>
-				<phase>prepare-package</phase>
-				<goals>
-					<goal>run</goal>
-				</goals>
-				<configuration/>
-			</execution>
-		</executions>
-	  </plugin>
+	  
 	  <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>
-          <version>2.1.1</version>
+          <version>2.3</version>
           <configuration>
               <archive>
                   <manifestFile>META-INF/MANIFEST.MF</manifestFile>
@@ -162,15 +155,16 @@
             </execution>
          </executions>
          <configuration>
-         	<dir>${basedir}\Artifacts</dir>
-         	<executionEnvironment>
+          <dir>${basedir}/Artifacts</dir>
+          <executionEnvironment>
          		<groupId>com.emc.executionenvironment</groupId>
          		<artifactId>xcp</artifactId>
-         		<version>2.1.11</version>
+         		<version>2.1.17</version>
          	</executionEnvironment>
-         <Manifest>
+          <Manifest>
             <Bundle-ClassPath>.</Bundle-ClassPath>
           </Manifest>
+          <mavenRepoPath>maven</mavenRepoPath>
         </configuration>
       </plugin>
 
@@ -187,14 +181,15 @@
             </execution>
          </executions>
          <configuration>
-         	<envId>${envId}</envId>
-         	<dataPolicy>${dataPolicy}</dataPolicy>
-         	<deploymentMethod>${deploymentMethod}</deploymentMethod>
-			<parameters>
+          <envId>${envId}</envId>
+          <dataPolicy>${dataPolicy}</dataPolicy>
+          <deploymentMethod>${deploymentMethod}</deploymentMethod>
+          <parameters>
   				<configFileName>${configFileName}</configFileName> 
 				<com.emc.executionenvironment.xcp.xPlore.xploreAsyncIndexing>${com.emc.executionenvironment.xcp.xPlore.xploreAsyncIndexing}</com.emc.executionenvironment.xcp.xPlore.xploreAsyncIndexing>
   			</parameters>
-         </configuration>
+          <mavenRepoPath>maven</mavenRepoPath>
+        </configuration>
       </plugin>
 
       <plugin>
@@ -349,7 +344,7 @@
     <dependency>
       <groupId>com.emc.xcp.ui</groupId>
       <artifactId>Services</artifactId>
-      <version>2.1.0110.2985</version>
+      <version>2.1.0170.3488</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -363,21 +358,21 @@
     <dependency>
       <groupId>com.emc.xcp.ui</groupId>
       <artifactId>xcp-core</artifactId>
-      <version>2.1.0110.2985</version>
+      <version>2.1.0170.3488</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.emc.xcp.ui</groupId>
       <artifactId>xcp-appjs</artifactId>
-      <version>2.1.0110.2985</version>
+      <version>2.1.0170.3488</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.emc.xcp.ui</groupId>
       <artifactId>dctm-ui-component-model</artifactId>
-      <version>2.1.0110.1219</version>
+      <version>2.1.0170.1280</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -398,14 +393,14 @@
     <dependency>
       <groupId>com.emc.xcp.ui</groupId>
       <artifactId>xcp-functions</artifactId>
-      <version>2.1.0110.2985</version>
+      <version>2.1.0170.3488</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.emc.xcp.ui</groupId>
       <artifactId>xcp-report-widgets</artifactId>
-      <version>2.1.0110.2985</version>
+      <version>2.1.0170.3488</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -545,56 +540,56 @@
     <dependency>
       <groupId>com.emc.xcp</groupId>
       <artifactId>xcp-ivf-widgets</artifactId>
-      <version>2.1.0110.2080</version>
+      <version>2.1.0170.2219</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.emc.xcp.rest</groupId>
       <artifactId>xcp-rest-core</artifactId>
-      <version>2.1.0110.1926</version>
+      <version>2.1.0170.2262</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.emc.xcp.rest</groupId>
       <artifactId>xcp-rest-core-types</artifactId>
-      <version>2.1.0110.1926</version>
+      <version>2.1.0170.2262</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.emc.xcp.rest</groupId>
       <artifactId>xcp-rest-test-types</artifactId>
-      <version>2.1.0110.1926</version>
+      <version>2.1.0170.2262</version>
       <type>jar</type>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.emc.xcp.rest</groupId>
       <artifactId>xcp-rest-crystalreport</artifactId>
-      <version>2.1.0110.1926</version>
+      <version>2.1.0170.2262</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>xcp</groupId>
       <artifactId>xcpcore</artifactId>
-      <version>2.1.1.201501152231</version>
+      <version>2.1.1.201507210126</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>xcpcomm</groupId>
       <artifactId>xcpcommons</artifactId>
-      <version>2.1.1.201501152231</version>
+      <version>2.1.1.201507210128</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>xcpui</groupId>
       <artifactId>xcpui</artifactId>
-      <version>2.1.1.201501152231</version>
+      <version>2.1.1.201504170030</version>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>

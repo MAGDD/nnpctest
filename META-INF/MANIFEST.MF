@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Require-Bundle: xcpui.xcpui;bundle-version="2.1.1", xcpcomm.xcpcommons
+Require-Bundle: xcpcomm.xcpcommons;bundle-version="2.1.1", xcpui.xcpui
  ;bundle-version="2.1.1", xcp.xcpcore;bundle-version="2.1.1"
 Bundle-ClassPath: .
-Bundle-Version: 1.0.0.201806201212
-EMC-XCP-ExecutionEnvironment: com.emc.executionenvironment.xcp:2.1.11
+Bundle-Version: 1.0.0.201806201650
+EMC-XCP-ExecutionEnvironment: com.emc.executionenvironment.xcp:2.1.17
 Bundle-Name: nnpctest
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: nnpc.nnpctest
