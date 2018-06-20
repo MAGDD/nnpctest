@@ -270,6 +270,16 @@ xcp.expression.Generated.addFunction("nnpc_view_base_folder_default_create_fold_
 
 xcp.expression.Generated.addFunction("nnpc_view_base_folder_folderQuery_folder_id_1", "function (context) { return this.getValueFromModel(context,'xcp_dm_folder','id'); }");
 
+xcp.expression.Generated.addFunction("nnpc_view_correspondance_da_def_delete_correspondance_1_id_1", "function (context) { return this.getValueFromModel(context,'nnpc_correspondance','id'); }");
+
+xcp.expression.Generated.addFunction("nnpc_view_correspondance_def_imp_af_1_folder_id_1", "function (context) { return this.getValueFromModel(context,'nnpc_correspondance','id'); }");
+
+xcp.expression.Generated.addFunction("nnpc_view_correspondance_default_create_docu_1_folder_id_1", "function (context) { return this.getValueFromModel(context,'nnpc_correspondance','id'); }");
+
+xcp.expression.Generated.addFunction("nnpc_view_correspondance_default_create_fold_1_parent_folder_id_1", "function (context) { return this.getValueFromModel(context,'nnpc_correspondance','id'); }");
+
+xcp.expression.Generated.addFunction("nnpc_view_correspondance_folderQuery_folder_id_1", "function (context) { return this.getValueFromModel(context,'nnpc_correspondance','id'); }");
+
 xcp.expression.Generated.addFunction("reassign_task_da_actionflow_reassign_task_id_1", "function (context) { return this.getValueFromActionFlowInputModel(context,'id'); }");
 
 xcp.expression.Generated.addFunction("reassign_task_da_actionflow_reassign_task_userName_1", "function (context) { return xcp.widget.form.DropdownList.getValueFromWidget(context,'user_from_queue.dropdown_list','value'); }");

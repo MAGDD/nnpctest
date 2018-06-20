@@ -15,4 +15,5 @@
   <indexes urn="urn:nnpc:com.emc.xcp.artifact.viewermapping:Artifacts/Viewer Formats/viewerformatmapping.viewerformat" categoryId="com.emc.xcp.artifact.viewermapping" path="Artifacts/Viewer Formats/viewerformatmapping.viewerformat" label="Viewers and Formats" name="viewerformatmapping"/>
   <indexes urn="urn:nnpc:com.emc.xcp.artifact.rtappconfig:Artifacts/Runtime App Configurations/runtimeappconfig.rtappconfig" categoryId="com.emc.xcp.artifact.rtappconfig" path="Artifacts/Runtime App Configurations/runtimeappconfig.rtappconfig" label="runtimeappconfig" name="runtimeappconfig"/>
   <indexes urn="urn:nnpc:com.emc.xcp.artifact.folder:Artifacts/Folders/correspondance.folder" categoryId="com.emc.xcp.artifact.folder" path="Artifacts/Folders/correspondance.folder" label="Correspondance" name="correspondance"/>
+  <indexes urn="urn:nnpc:com.emc.xcp.artifact.page:Artifacts/Pages/view_correspondance.page" categoryId="com.emc.xcp.artifact.page" path="Artifacts/Pages/view_correspondance.page" label="View Correspondance" name="view_correspondance"/>
 </Artifact:ArtifactIndexes>

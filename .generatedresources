@@ -1,4 +1,4 @@
-#Wed Jun 20 12:12:47 CEST 2018
+#Wed Jun 20 12:29:35 CEST 2018
 Artifacts/Resources/shield_delete_32.png_0=\\nnpctest\\gen\\main\\webapp\\images\\xcpcomm\\shield_delete_32.png
 Artifacts/Resources/calendar_view_day.png_0=\\nnpctest\\gen\\main\\webapp\\images\\xcpcomm\\calendar_view_day.png
 Artifacts/Resources/folder_page.png_0=\\nnpctest\\gen\\main\\webapp\\images\\xcpcomm\\folder_page.png
@@ -300,6 +300,7 @@ Artifacts/Resources/picture_delete.png_0=\\nnpctest\\gen\\main\\webapp\\images\\
 Artifacts/Resources/flag_blue_32.png_0=\\nnpctest\\gen\\main\\webapp\\images\\xcpcomm\\flag_blue_32.png
 Artifacts/Resources/camera_add_32.png_0=\\nnpctest\\gen\\main\\webapp\\images\\xcpcomm\\camera_add_32.png
 Artifacts/Resources/chart_bar.png_0=\\nnpctest\\gen\\main\\webapp\\images\\xcpcomm\\chart_bar.png
+Artifacts/Pages/view_correspondance.page_0=\\nnpctest\\gen\\main\\webapp\\pages\\nnpc_correspondance\\nnpc_view_correspondance.json
 Artifacts/UI\ Steps/signoff_reject_one.uistep_0=\\nnpctest\\gen\\main\\webapp\\steps\\application\\xcp_signoff_reject_one.json
 Artifacts/Resources/comment.png_0=\\nnpctest\\gen\\main\\webapp\\images\\xcpcomm\\comment.png
 Artifacts/Resources/calendar_delete.png_0=\\nnpctest\\gen\\main\\webapp\\images\\xcpcomm\\calendar_delete.png

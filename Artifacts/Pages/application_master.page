@@ -134,11 +134,11 @@
             <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@properties.12"/>
           </children>
           <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_button" parent="//@rootContainer/@children.0/@children.0/@children.0" widgetEntry="//@widgetMap[key='nav_button2']">
-            <properties name="text" value="Menu Item" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.0"/>
+            <properties name="text" value="Members" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.0"/>
             <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.1"/>
             <properties name="xcp_menu_onhover" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.2"/>
             <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.3"/>
-            <properties name="xcp_link_type" value="none" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.4"/>
+            <properties name="xcp_link_type" value="application" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.4"/>
             <properties name="xcp_page_sel_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.5"/>
             <properties name="redirectPageUrlName" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.6"/>
             <properties name="redirectObjectId" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.7"/>
@@ -146,6 +146,11 @@
             <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.9"/>
             <properties name="cls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.10"/>
             <properties name="xcpId" value="nav_button2" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.11"/>
+            <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="nnpc_correspondance/nnpc_view_correspondance" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.12">
+              <data selectionName="view_correspondance" selectionLabel="View Correspondance">
+                <dataRef href="urn:nnpc:com.emc.xcp.artifact.page:Artifacts/Pages/view_correspondance.page#/"/>
+              </data>
+            </properties>
             <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.0"/>
             <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.1"/>
             <propertyMap key="xcp_menu_onhover" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.2"/>
@@ -158,6 +163,7 @@
             <propertyMap key="disabled" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.9"/>
             <propertyMap key="cls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.10"/>
             <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.11"/>
+            <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.12"/>
           </children>
           <children componentDefinitionId="xcp_user_button" parent="//@rootContainer/@children.0/@children.0/@children.0" widgetEntry="//@widgetMap[key='user_button']">
             <properties name="cls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@propertyMap.0"/>
