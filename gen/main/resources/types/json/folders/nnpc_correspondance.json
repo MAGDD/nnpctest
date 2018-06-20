@@ -1,0 +1,29 @@
+{
+  "name" : "folder-type",
+  "type" : "nnpc_correspondance",
+  "label" : "Correspondance",
+  "commentable" : true,
+  "parent" : "${contextPath}types/folders/xcp_dm_folder",
+  "links" : [ {
+    "rel" : "self",
+    "href" : "${contextPath}types/folders/nnpc_correspondance"
+  }, {
+    "rel" : "http://identifiers.emc.com/linkrel/instances",
+    "href" : "${contextPath}folders/nnpc_correspondance"
+  }, {
+    "rel" : "http://identifiers.emc.com/linkrel/defaults",
+    "href" : "${contextPath}types/folders/nnpc_correspondance/defaults"
+  }, {
+    "rel" : "type"
+  }, {
+    "rel" : "edit"
+  }, {
+    "rel" : "canonical"
+  }, {
+    "rel" : "http://identifiers.emc.com/linkrel/delete"
+  }, {
+    "rel" : "http://identifiers.emc.com/linkrel/comments"
+  }, {
+    "rel" : "http://identifiers.emc.com/linkrel/objects"
+  } ]
+}

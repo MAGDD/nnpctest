@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<folder-type commentable="true" label="Correspondance" parent="${contextPath}types/folders/xcp_dm_folder" type="nnpc_correspondance" xmlns="http://identifiers.emc.com/vocab/xcp">
+  <links>
+    <link href="${contextPath}types/folders/nnpc_correspondance" rel="self"/>
+    <link href="${contextPath}folders/nnpc_correspondance" rel="http://identifiers.emc.com/linkrel/instances"/>
+    <link href="${contextPath}types/folders/nnpc_correspondance/defaults" rel="http://identifiers.emc.com/linkrel/defaults"/>
+    <link rel="type"/>
+    <link rel="edit"/>
+    <link rel="canonical"/>
+    <link rel="http://identifiers.emc.com/linkrel/delete"/>
+    <link rel="http://identifiers.emc.com/linkrel/comments"/>
+    <link rel="http://identifiers.emc.com/linkrel/objects"/>
+  </links>
+</folder-type>
