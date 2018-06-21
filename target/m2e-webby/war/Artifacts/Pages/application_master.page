@@ -90,9 +90,9 @@
             <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.9"/>
             <properties name="cls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.10"/>
             <properties name="xcpId" value="nav_button" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.11"/>
-            <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="xcp_dm_document/nnpc_view_base_content" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.12">
-              <data selectionName="view_base_content" selectionLabel="View Base Content">
-                <dataRef href="urn:nnpc:com.emc.xcp.artifact.page:Artifacts/Pages/view_base_content.page#/"/>
+            <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="nnpc_correspondance/nnpc_correspondance_temp" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.12">
+              <data selectionName="correspondance_temp" selectionLabel="Correspondance Template">
+                <dataRef href="urn:nnpc:com.emc.xcp.artifact.page:Artifacts/Pages/correspondance_temp.page#/"/>
               </data>
             </properties>
             <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@properties.0"/>
