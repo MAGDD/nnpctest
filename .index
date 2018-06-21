@@ -18,4 +18,5 @@
   <indexes urn="urn:nnpc:com.emc.xcp.artifact.page:Artifacts/Pages/view_correspondance.page" categoryId="com.emc.xcp.artifact.page" path="Artifacts/Pages/view_correspondance.page" label="View Correspondance" name="view_correspondance"/>
   <indexes urn="urn:nnpc:com.emc.ide.artifact.process:Artifacts/Processes/manage_template.process" categoryId="com.emc.ide.artifact.process" path="Artifacts/Processes/manage_template.process" label="manage template" name="manage_template"/>
   <indexes urn="urn:nnpc:com.emc.xcp.artifact.page:Artifacts/Pages/correspondance_temp.page" categoryId="com.emc.xcp.artifact.page" path="Artifacts/Pages/correspondance_temp.page" label="Correspondance Template" name="correspondance_temp"/>
+  <indexes urn="urn:nnpc:com.emc.xcp.artifact.page:Artifacts/Pages/admin_page.page" categoryId="com.emc.xcp.artifact.page" path="Artifacts/Pages/admin_page.page" label="Admin page" name="admin_page"/>
 </Artifact:ArtifactIndexes>
