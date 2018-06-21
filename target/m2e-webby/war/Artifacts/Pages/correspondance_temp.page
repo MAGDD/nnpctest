@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uitemplate:Page xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uitemplate="http://www.emc.com/xcp2/2010/uitemplate" urn="urn:nnpc:com.emc.xcp.artifact.page:Artifacts/Pages/correspondance_temp.page" categoryId="com.emc.xcp.artifact.page" name="correspondance_temp" label="Correspondance Template" templateType="folder" templateScope="INSTANCE">
+  <title exprStr="Correspondance Template"/>
+  <rootContainer widgetEntry="//@widgetMap[key='root']">
+    <properties name="xcpId" value="root" entry="//@rootContainer/@propertyMap.0"/>
+    <propertyMap key="xcpId" value="//@rootContainer/@properties.0"/>
+  </rootContainer>
+  <widgetMap key="root" value="//@rootContainer"/>
+  <primaryModel href="urn:nnpc:com.emc.xcp.artifact.folder:Artifacts/Folders/correspondance.folder#/"/>
+</uitemplate:Page>
